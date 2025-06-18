@@ -1,0 +1,17 @@
+<input type="text" id="input">
+<script>
+    document.getElementById("input").addEventListener("input",function(event){
+        console.log("You Have Inputed!"+ event.target.value);
+    })
+</script>
+
+<form id="loginForm">
+  <input type="text" placeholder="Username" />
+  <button type="submit">Login</button>
+</form>
+<script>
+document.getElementById("loginForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // stops page from reloading
+    console.log("Form submitted!");
+});
+</script>
