@@ -1,0 +1,36 @@
+<html>
+    <head>
+    </head>
+
+    <body>
+      <p id="demo">Hello World</p>
+      <!-- <button onclick="displayInfo()">Click to change</button>
+      <script>
+        function displayInfo(){
+            document.getElementById("demo").innerText = "Hello Brother";
+        }
+      </script> --> 
+      <!-- Changing HTML, Text & Styles: -->
+       <script>
+
+           let para = document.getElementById("demo");
+           para.innerText = "How Are You";
+           para.innerHTML = "<h2>I Am Fine</h2>";
+           para.style.color = "blue";
+           para.style.fontSize = "20px";
+       </script>
+       <!-- Creating & Appending Elements: -->
+        <script>
+            let newDiv = document.createElement("div");
+            newDiv.innerText = "I was created by Js!";
+            document.body.appendChild(newDiv);
+        </script>
+        <!-- Removing Elements: -->
+         <script>
+
+             let element = document.getElementById("demo");
+             element.remove();
+         </script>
+        
+    </body>
+    </html>
